@@ -22,8 +22,8 @@ shape('turtle')
 #     left(7)
 
 
-circle(50)
-mainloop()
+    # circle(50)
+    # mainloop()
 
 mainloop()
 # color("red","yellow")
