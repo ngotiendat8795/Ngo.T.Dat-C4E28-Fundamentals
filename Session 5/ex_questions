@@ -1,0 +1,22 @@
+- Why should we use functions at all?
+we use funtion to automate the repetative tasks that involve the same parameters and return the same type of result under same calculation process.
+This will save your time/energy/neuron/batery...
+
+- How to define/declare a function?
+text def + name of the function (parameters)
+
+- How to call/use a function?
+text the name of the function along with specific value of its parameters
+
+- What is return, why and how do we use it?
+return is the output of the funtion after it process the input (parameters). we can use the result (return) for what ever purpose if it is applicable.
+
+- Do we have to use return in every function?
+Not necessarily
+
+- What are function arguments/parameters, why and how we use it?
+They are the input of the function, we give them specific value and we wil get specific result.
+
+- How to use function from a different file other than our currently working file?
+from name_of_local_file_that_contains_the_function import * or import function
+name_of_local_file_that_contains_the_function.function(parameters)
