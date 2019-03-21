@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>poems</title>
+</head>
+<body>
+
+
+{% for poem in poems%}
+    <h2> Bài thơ số: {{loop.index}} </h2>
+
+    <h3>{{poem.title}}</h3>
+    <p>{{poem.content}}</p>
+    {% if poem.gender == "male"%} 
+    <h3>By Mr. {{poem.author}}</h3>
+    {% else %} 
+    <h3>By Ms. {{poem.author}}</h3>
+
+    {% endif %}
+
+    <hr>
+
+{% endfor %}
+
+<!-- <h3>Tràng Giang</h3>
+<p>
+Lớp lớp mây cao đùm núi bạc <br/>
+Chim nghiêng cánh nhỏ bóng chiều xa <br/> 
+Lòng quê ròn rợn vời con nước <br/>
+Không khói hoàng hôn cũng nhớ nhà <br/>
+</p>
+<H4>By Huy Cận</H4>
+<hr> -->
+</body>
+</html>

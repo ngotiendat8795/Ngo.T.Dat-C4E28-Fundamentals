@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI CALCULATION</title>
+</head>
+
+<body>
+
+    {% if BMI < 16 %}
+    <h3>Serverely underweight </h3>
+    {% elif BMI < 18.5 %}
+    <h3>Underweight</h3>
+    {% elif BMI < 25 %}
+    <h3>Normal</h3>
+    {% elif BMI < 30 %}
+    <h3>Overweight</30>
+    {% else %}
+    <h3>Obsese</h3>
+
+    {% endif %}
+
+</body>
+</html>
