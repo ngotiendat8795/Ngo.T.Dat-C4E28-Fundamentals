@@ -53,11 +53,12 @@ def mouse_press(x, y, text, color, quiz_type):
     # r3 = range(60,161)
     # r4 = range(180,281)
 
+    loop = True
     while loop:
         if x in range(20,121):
             if y in range(60,161):
                 color_clicked = "blue"
-                loop = false
+                loop = False
             elif y in range(180,281):
                 color_clicked = "yellow"
                 loop = False
@@ -67,7 +68,7 @@ def mouse_press(x, y, text, color, quiz_type):
         if x in range(140,241):
             if y in range(60,161):
                 color_clicked = "red"
-                loop = false
+                loop = False
             elif y in range(180,281):
                 color_clicked = "green"
                 loop = False
@@ -82,26 +83,9 @@ def mouse_press(x, y, text, color, quiz_type):
 
     if quiz_type == 1: #user have to choose the color based on the color
 
-        if colors_text[color_clicked] == colors_index[color]:
+        if colors_text.index(color_clicked) == colors_index.index(color):
             return True
         else: return False
 
 
 
-
-
-# #Blue   
-#     x in range (20,121)
-#     y in range (60,161)
-
-# #Red
-#     x in range (140,241)
-#     y in range (60, 161)
-
-# #Yellow
-#     x in range (20,121)
-#     y in range (180,281)
-
-# #Green
-#     x in range (140,241)
-#     y in range (180,281)

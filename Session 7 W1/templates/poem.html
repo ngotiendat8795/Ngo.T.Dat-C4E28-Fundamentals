@@ -10,7 +10,9 @@
 
 
 {% for poem in poems%}
-    <h2> Bài thơ số: {{loop.index}} </h2>
+   
+
+    <a href="{{url_for('detail',index = loop.index)}}"> <h2> Bài thơ số: {{loop.index}} </h2> </a>
 
     <h3>{{poem.title}}</h3>
     <p>{{poem.content}}</p>

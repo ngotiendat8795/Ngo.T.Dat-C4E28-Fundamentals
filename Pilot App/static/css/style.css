@@ -1,0 +1,74 @@
+/* Reset CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#div {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: snow;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid black
+
+}
+
+#login_form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 20%;
+
+
+}
+
+.input_form {
+    height: 18%;
+    width: 111%;
+    border-radius: 4px;
+    padding: 2px
+}
+
+#btn_login {
+    width: 22%; 
+    height: 20%;
+    border: none;
+    border-radius: 2px;
+    background-color: darkgrey;
+    box-shadow: 2px 4px grey;
+    color: red
+
+}
+
+#btn_login:active {
+    box-shadow: 0px 0px;
+    transition: 0.1s;
+}
+
+button :hover {
+    background-color: darkslategrey
+}
+
+
+
