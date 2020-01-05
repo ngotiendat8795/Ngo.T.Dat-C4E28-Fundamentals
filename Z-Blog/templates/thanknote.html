@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In mail me!</title>
+</head>
+
+<script>
+
+    function updateScroll(){
+        var element = document.getElementById("background");
+        element.scrollBottom = element.scrollHeight;
+    }
+    updateScroll()
+    
+</script>
+
+<style>
+
+body {
+    height: 900px;
+    widows: 600px;
+    background-image: url('../static/image/background.jpg');
+    background-size:100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+</style>
+<body id="background">
+<div style="background-color: black; width: 560px; margin-left: 5px;">
+ <h3 style="color:brown; font-size: 20px; margin-left: 10px;" display="flex" flex-flow= "column"  justify-content="center"> Thank you, your mail has been transmitted. Have a nice day</h3>   
+
+</div>
+</body>
+</html>
